@@ -1,6 +1,8 @@
 /**
  * @param {number[]} temperatures
  */
+
+
 function getPositiveTemperatures(temperatures) {
     
     const temp = temperatures.filter(function(temperature) {
