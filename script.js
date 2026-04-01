@@ -173,3 +173,22 @@ export function getRaisedGrades(grades) {
     })
     return result
 }
+
+
+// Problem : return all Eligible count 
+
+/**
+ * @param {number[]} ages
+ */
+export function getVotersCount(ages) {
+    
+    let count = 0 
+    ages.filter(function(age) {
+        if(age >= 18) {
+            count++
+        }
+    })
+    return count
+}
+
+// Probelm : 
