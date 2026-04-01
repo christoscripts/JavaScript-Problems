@@ -33,3 +33,21 @@ function getFreezingTemperatures(temperatures) {
 // Sample usage - do not modify
 console.log(getFreezingTemperatures([-5, 12, 3])); // [-5]
 console.log(getFreezingTemperatures([1, -3, -2, 4, 10])); // [-3, -2]
+
+
+// Problem : Complete the function getYear such that it returns the searchYear (passed as 2nd parameter) when it's found in the array. Otherwise, it should return undefined.
+
+/**
+ * @param {number[]} years
+ * @param {number} searchYear
+ */
+function getYear(years, searchYear) {
+    const result = years.find(function(year) {
+        return (year === searchYear)
+    })
+    return result
+}
+
+// Sample usage - do not modify
+console.log(getYear([2019, 2020, 2021], 2020)); // 2020
+console.log(getYear([2019, 2020, 2021], 1990)); // undefined
